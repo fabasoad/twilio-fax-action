@@ -1,0 +1,47 @@
+{
+  "name": "twilio-fax-action",
+  "version": "1.0.0",
+  "description": "This GitHub action sends fax with the defined text.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabasoad/twilio-fax-action.git"
+  },
+  "keywords": [
+    "actions",
+    "twilio",
+    "fax",
+    "phone"
+  ],
+  "author": "Yevhen Fabizhevskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabasoad/twilio-fax-action/issues"
+  },
+  "scripts": {
+    "build": "ncc build -m src/index.js",
+    "test": "jest --config=jest.config.json --coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "homepage": "https://github.com/fabasoad/twilio-fax-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^1.1.0",
+    "twilio": "^3.43.0",
+    "snyk": "^1.316.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.12.38",
+    "@zeit/ncc": "^0.21.0",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.7.1",
+    "prettier": "^1.17.1",
+    "snyk": "^1.316.1",
+    "ts-jest": "^24.0.2",
+    "twilio": "^3.43.0",
+    "typescript": "^3.5.1"
+  },
+  "snyk": true
+}

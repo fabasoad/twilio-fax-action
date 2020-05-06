@@ -1,0 +1,19 @@
+---
+name: Twilio
+
+on: push
+
+jobs:
+  twilio-fax:
+    name: Twilio Fax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: fabasoad/twilio-fax-action@master
+        if: success()
+        with:
+          url: 'http://africau.edu/images/default/sample.pdf'
+          from: '+1(832)6328398'
+          to: '+1(855)4109598'
+          twilio_account_sid: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          twilio_auth_token: ${{ secrets.TWILIO_AUTH_TOKEN }}
