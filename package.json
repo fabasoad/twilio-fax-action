@@ -19,29 +19,31 @@
     "url": "https://github.com/fabasoad/twilio-fax-action/issues"
   },
   "scripts": {
-    "build": "ncc build -m src/index.js",
+    "build": "ncc build -m src/index.ts",
+    "lint": "eslint --ext ts src",
     "test": "jest --config=jest.config.json --coverage",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
   "homepage": "https://github.com/fabasoad/twilio-fax-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.2",
-    "@actions/github": "^1.1.0",
-    "twilio": "^3.43.0",
-    "snyk": "^1.316.1"
+    "@actions/core": "^1.2.4",
+    "twilio": "^3.43.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.12.38",
-    "@zeit/ncc": "^0.21.0",
-    "jest": "^24.9.0",
-    "jest-circus": "^24.7.1",
-    "prettier": "^1.17.1",
-    "snyk": "^1.316.1",
-    "ts-jest": "^24.0.2",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^26.0.1",
+    "jest-circus": "^26.0.1",
+    "snyk": "^1.319.0",
+    "ts-jest": "^25.5.0",
     "twilio": "^3.43.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.8.3"
   },
   "snyk": true
 }

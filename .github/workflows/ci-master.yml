@@ -20,3 +20,4 @@ jobs:
         with:
           package-manager: npm
           command: test
+      - run: npm run lint

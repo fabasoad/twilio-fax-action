@@ -2,9 +2,9 @@
 name: 'Twilio Fax'
 author: Yevhen Fabizhevskyi
 description: 'This GitHub action sends fax with the defined text.'
-# branding:
-#   icon: voicemail
-#   color: white
+branding:
+  icon: file-text
+  color: white
 inputs:
   twilio_account_sid:
     description: 'Twilio Account SID.'
@@ -19,8 +19,11 @@ inputs:
     description: 'Fax sender number (Twilio).'
     required: true
   to:
-    description: 'Fax receiver number.'
+    description: 'Fax recepient number.'
     required: true
+outputs:
+  sid:
+    description: 'SID of fax operation.'
 runs:
   using: 'node12'
   main: 'dist/index.js'
