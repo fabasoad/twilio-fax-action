@@ -1,5 +1,5 @@
 # Twilio Fax Action
-![](https://img.shields.io/github/v/release/fabasoad/twilio-fax-action?include_prereleases) ![CI (latest)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(latest)/badge.svg) ![CI (master)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(master)/badge.svg) ![YAML Lint](https://github.com/fabasoad/twilio-fax-action/workflows/YAML%20Lint/badge.svg)
+![](https://img.shields.io/github/v/release/fabasoad/twilio-fax-action?include_prereleases) ![CI (latest)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(latest)/badge.svg) ![CI (master)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(master)/badge.svg) ![YAML Lint](https://github.com/fabasoad/twilio-fax-action/workflows/YAML%20Lint/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/f1014095c2d878bc36fb/maintainability)](https://codeclimate.com/github/fabasoad/twilio-fax-action/maintainability) [![Known Vulnerabilities](https://snyk.io/test/github/fabasoad/twilio-fax-action/badge.svg)](https://snyk.io/test/github/fabasoad/twilio-fax-action)
 
 This action sends fax using Twilio.
 

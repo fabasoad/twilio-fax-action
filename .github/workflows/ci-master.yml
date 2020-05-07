@@ -16,8 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:      
       - uses: actions/checkout@v2.1.0
-      - uses: Adzz/jest_test_action@v1.0.0
+      - uses: actions/setup-node@v1.4.2
         with:
-          package-manager: npm
-          command: test
-      - run: npm run lint
+          node-version: '13'
+      - name: Linting
+        run: npm run lint
+      - name: Testing with coverage
+        uses: paambaati/codeclimate-action@v2.6.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: npm test
+          debug: true
