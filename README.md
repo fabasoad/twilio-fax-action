@@ -1,5 +1,5 @@
 # Twilio Fax Action
-![](https://img.shields.io/github/v/release/fabasoad/twilio-fax-action?include_prereleases) ![CI (latest)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(latest)/badge.svg) ![CI (master)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(master)/badge.svg) ![YAML Lint](https://github.com/fabasoad/twilio-fax-action/workflows/YAML%20Lint/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/f1014095c2d878bc36fb/maintainability)](https://codeclimate.com/github/fabasoad/twilio-fax-action/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f1014095c2d878bc36fb/test_coverage)](https://codeclimate.com/github/fabasoad/twilio-fax-action/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/fabasoad/twilio-fax-action/badge.svg)](https://snyk.io/test/github/fabasoad/twilio-fax-action)
+![](https://img.shields.io/github/v/release/fabasoad/twilio-fax-action?include_prereleases) ![CI (latest)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(latest)/badge.svg) ![CI (main)](https://github.com/fabasoad/twilio-fax-action/workflows/CI%20(main)/badge.svg) ![YAML Lint](https://github.com/fabasoad/twilio-fax-action/workflows/YAML%20Lint/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/f1014095c2d878bc36fb/maintainability)](https://codeclimate.com/github/fabasoad/twilio-fax-action/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/f1014095c2d878bc36fb/test_coverage)](https://codeclimate.com/github/fabasoad/twilio-fax-action/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/fabasoad/twilio-fax-action/badge.svg)](https://snyk.io/test/github/fabasoad/twilio-fax-action)
 
 This action sends fax using Twilio.
 
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: fabasoad/twilio-fax-action@master
+      - uses: fabasoad/twilio-fax-action@main
         with:
           url: 'http://africau.edu/images/default/sample.pdf'
           from: '+11234567890'
@@ -49,7 +49,7 @@ jobs:
 ### Result
 Here is the example where the same Twilio account is used for both - recepient and sender. [Random public PDF file](http://africau.edu/images/default/sample.pdf) is used for this demonstration as an example. This is the result of finished job:
 
-![CI result](https://raw.githubusercontent.com/fabasoad/twilio-fax-action/master/screenshots/screenshot1.png)
+![CI result](https://raw.githubusercontent.com/fabasoad/twilio-fax-action/main/screenshots/screenshot1.png)
 
 Then the result can be checked by calling [REST API endpoint](https://www.twilio.com/docs/fax/api/fax-resource#fetch-a-fax-resource) to get information. Here is the result:
 
@@ -80,6 +80,6 @@ _Calling https://fax.twilio.com/v1/Faxes/FX03d290ea94e78658133d96f7f23bdf1b_
 ```
 Here is the result of calling `media_url` property:
 
-![Fax result](https://raw.githubusercontent.com/fabasoad/twilio-fax-action/master/screenshots/screenshot2.png)
+![Fax result](https://raw.githubusercontent.com/fabasoad/twilio-fax-action/main/screenshots/screenshot2.png)
 
 As you can see result document is the same as was defined in action argument, means that document has been sent by fax successfully.
