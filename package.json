@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/fabasoad/twilio-fax-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
-    "twilio": "^3.48.0"
+    "@actions/core": "^1.2.6",
+    "twilio": "^3.43.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.5",
