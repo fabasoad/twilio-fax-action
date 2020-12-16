@@ -6,7 +6,12 @@
     "typescript.suggestionActions.enabled": true
   },
   "cSpell.words": [
+    "Autobuild",
+    "UNSECURE",
+    "codeql",
     "ibiqlik",
+    "issuehunt",
+    "liberapay",
     "paambaati",
     "twilio",
     "vercel",
