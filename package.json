@@ -1,6 +1,6 @@
 {
   "name": "twilio-fax-action",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This GitHub action sends fax with the defined text.",
   "main": "dist/index.js",
   "repository": {
@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.19",
-    "@types/node": "14.14.14",
-    "@typescript-eslint/eslint-plugin": "4.10.0",
-    "@typescript-eslint/parser": "4.10.0",
+    "@types/node": "14.14.16",
+    "@typescript-eslint/eslint-plugin": "4.11.0",
+    "@typescript-eslint/parser": "4.11.0",
     "@vercel/ncc": "0.26.1",
     "eslint": "7.16.0",
     "eslint-config-google": "0.14.0",
@@ -44,7 +44,7 @@
     "husky": "4.3.6",
     "jest": "26.6.3",
     "jest-circus": "26.6.3",
-    "snyk": "1.437.2",
+    "snyk": "1.437.3",
     "ts-jest": "26.4.4",
     "typescript": "4.1.3"
   },
