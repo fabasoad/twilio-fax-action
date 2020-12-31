@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "ncc build -m src/index.ts",
-    "lint": "eslint --ext ts src",
+    "lint": "eslint --config .github/linters/.eslintrc.json --ext ts src",
     "security:auth": "snyk auth",
     "security:test": "snyk test",
     "test": "jest --config=jest.config.json --coverage",
