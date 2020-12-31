@@ -19,7 +19,7 @@ inputs:
     description: 'Fax sender number (Twilio).'
     required: true
   to:
-    description: 'Fax recepient number.'
+    description: 'Fax recipient number.'
     required: true
 outputs:
   sid:

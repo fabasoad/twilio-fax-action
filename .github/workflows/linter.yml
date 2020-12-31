@@ -22,7 +22,8 @@ jobs:
       - name: Run Lint
         uses: github/super-linter@v3.14.3
         env:
-          VALIDATE_ALL_CODEBASE: false
+          ACTIONS_RUNNER_DEBUG: true
+          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
