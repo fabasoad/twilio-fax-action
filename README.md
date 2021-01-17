@@ -38,7 +38,7 @@ jobs:
     name: Twilio Fax
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - uses: fabasoad/twilio-fax-action@main
         with:
           url: 'http://africau.edu/images/default/sample.pdf'
