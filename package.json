@@ -40,7 +40,7 @@
     "@types/node": "15.0.1",
     "@typescript-eslint/eslint-plugin": "4.28.1",
     "@typescript-eslint/parser": "4.22.0",
-    "@vercel/ncc": "0.28.4",
+    "@vercel/ncc": "0.28.6",
     "eslint": "7.25.0",
     "eslint-config-google": "0.14.0",
     "git-branch-is": "4.0.0",
