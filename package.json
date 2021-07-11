@@ -1,6 +1,6 @@
 {
   "name": "twilio-fax-action",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "This GitHub action sends fax with the defined text.",
   "main": "dist/index.js",
   "repository": {
