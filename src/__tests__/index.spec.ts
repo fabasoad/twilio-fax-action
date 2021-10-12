@@ -41,13 +41,20 @@ test('should run successfully', async () => {
   })
 })
 
-test('should print error in case of failure', async () => {
-  const message = 'test-message'
-  twilio['default'].mockImplementation(() => {
-    throw new Error(message)
+type TError = Error | object | string;
+// eslint-disable-next-line no-array-constructor
+new Array<TError>(new Error('t01'), 't02', { toString: () => 't03' })
+  .forEach((err: TError) => {
+    const testName =
+      `[${err.constructor.name}] should print error in case of failure`
+    test(testName, async () => {
+      twilio['default'].mockImplementation(() => {
+        throw err
+      })
+      await main()
+      expect(core.setOutput).not.toHaveBeenCalled()
+      expect(core.setFailed).toHaveBeenCalledTimes(1)
+      expect(core.setFailed).toHaveBeenCalledWith(
+        err instanceof Error || typeof err === 'string'? err : err + '')
+    })
   })
-  await main()
-  expect(core.setOutput).not.toHaveBeenCalled()
-  expect(core.setFailed).toHaveBeenCalledTimes(1)
-  expect(core.setFailed).toHaveBeenCalledWith(message)
-})

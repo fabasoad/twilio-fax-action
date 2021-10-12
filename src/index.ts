@@ -16,7 +16,7 @@ export const main = async () => {
     core.setOutput('sid', f.sid)
   } catch (err) {
     core.setFailed(
-      err instanceof Error || typeof err === 'string'? err : err as string)
+      err instanceof Error || typeof err === 'string'? err : err + '')
   }
 }
 
