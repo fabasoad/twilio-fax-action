@@ -14,8 +14,9 @@ export const main = async () => {
       mediaUrl: core.getInput('url')
     })
     core.setOutput('sid', f.sid)
-  } catch ({ message }) {
-    core.setFailed(message)
+  } catch (err) {
+    core.setFailed(
+      err instanceof Error || typeof err === 'string'? err : err as string)
   }
 }
 
