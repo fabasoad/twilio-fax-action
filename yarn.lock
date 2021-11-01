@@ -944,7 +944,7 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-axios@^0.21.1:
+axios@^0.21.4:
   version "0.21.4"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
@@ -3396,12 +3396,12 @@ tunnel@0.0.6:
   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
 
-twilio@3.69.0:
-  version "3.69.0"
-  resolved "https://registry.yarnpkg.com/twilio/-/twilio-3.69.0.tgz#641d1c16f647f5f091e253345e7983c7306bffdd"
-  integrity sha512-mm330UFTlFh6GyLZUPVSLO0uVCigW7JdX/wyyV3VuBJ4Z8ie/aNmgztd3xWQr6RBB98gCwJ+UtumqIfixVUm8A==
+twilio@3.70.0:
+  version "3.70.0"
+  resolved "https://registry.yarnpkg.com/twilio/-/twilio-3.70.0.tgz#9e6a96f0c46e8256d74bce918baeb7e678c4c1aa"
+  integrity sha512-GhohvQfP3aHEwiCb6MWqDJ/KeSyFmFwCQtoSuHEwevE7GCxCq6spK36HlCNg3UyTTZNvfdIhN9Sf1wDWeDIbOg==
   dependencies:
-    axios "^0.21.1"
+    axios "^0.21.4"
     dayjs "^1.8.29"
     https-proxy-agent "^5.0.0"
     jsonwebtoken "^8.5.1"
