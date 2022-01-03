@@ -25,5 +25,5 @@ outputs:
   sid:
     description: 'SID of fax operation.'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
