@@ -1,23 +1,11 @@
 import * as core from '@actions/core'
-import * as twilio from 'twilio'
-import { FaxInstance } from 'twilio/lib/rest/fax/v1/fax'
 
-export const main = async () => {
-  try {
-    const f: FaxInstance = await twilio.default(
-      core.getInput('twilio_account_sid'),
-      core.getInput('twilio_auth_token'),
-      { lazyLoading: true }
-    ).fax.faxes.create({
-      from: core.getInput('from'),
-      to: core.getInput('to'),
-      mediaUrl: core.getInput('url')
-    })
-    core.setOutput('sid', f.sid)
-  } catch (err) {
-    core.setFailed(
-      err instanceof Error || typeof err === 'string'? err : err + '')
-  }
-}
-
-main()
+core.setOutput('sid', 'None')
+core.warning(
+  'This GitHub action is deprecated, is not supported and cannot be used. ' +
+  'Twilio sunset programmable fax offering on 2021/12/17. And also, ' +
+  'twilio-node library introduced the breaking change in 3.74.0 version ' +
+  'where possibility to send faxes has been removed. More ' +
+  ' information: https://github.com/twilio/twilio-node/releases/tag/3.74.0' +
+  ' and https://www.twilio.com/changelog/programmable-fax-end-life-one-year-notice'
+)
