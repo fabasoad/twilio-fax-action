@@ -17,11 +17,11 @@ Sign up to [Twilio](https://twilio.com) official web page. Then [register a new 
 
 | Name               | Required | Description                              | Type            |
 |--------------------|----------|------------------------------------------|-----------------|
-| twilio_account_sid | Yes      | Twilio account SID                       | &lt;String&gt;  |
-| twilio_auth_token  | Yes      | Twilio auth token                        | &lt;String&gt;  |
-| url                | Yes      | Url to the file that will be send by fax | &lt;String&gt;  |
-| from               | Yes      | Fax sender number (Twilio)               | &lt;String&gt;  |
-| to                 | Yes      | Fax recipient number                     | &lt;String&gt;  |
+| twilio_account_sid | No       | Twilio account SID                       | &lt;String&gt;  |
+| twilio_auth_token  | No       | Twilio auth token                        | &lt;String&gt;  |
+| url                | No       | Url to the file that will be send by fax | &lt;String&gt;  |
+| from               | No       | Fax sender number (Twilio)               | &lt;String&gt;  |
+| to                 | No       | Fax recipient number                     | &lt;String&gt;  |
 
 ## Outputs
 
