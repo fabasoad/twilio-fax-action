@@ -1,5 +1,5 @@
 ---
-name: 'Twilio Fax'
+name: 'Twilio Fax (Deprecated)'
 author: Yevhen Fabizhevskyi
 description: 'This GitHub action sends fax with the defined text.'
 branding:
@@ -8,19 +8,24 @@ branding:
 inputs:
   twilio_account_sid:
     description: 'Twilio Account SID.'
-    required: true
+    required: false
+    default: ''
   twilio_auth_token:
     description: 'Twilio Auth token.'
-    required: true
+    required: false
+    default: ''
   url:
     description: 'Url to the file that will be send by fax.'
-    required: true
+    required: false
+    default: ''
   from:
     description: 'Fax sender number (Twilio).'
-    required: true
+    required: false
+    default: ''
   to:
     description: 'Fax recipient number.'
-    required: true
+    required: false
+    default: ''
 outputs:
   sid:
     description: 'SID of fax operation.'

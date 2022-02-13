@@ -1,0 +1,15 @@
+---
+name: Fax
+
+on:
+  push:
+    branches: ['*']
+
+jobs:
+  fax:
+    name: Fax
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
