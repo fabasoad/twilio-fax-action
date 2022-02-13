@@ -1,10 +1,7 @@
 ---
 name: Fax
 
-on:
-  pull_request:
-    branches:
-      - *
+on: pull_request
 
 jobs:
   fax:
