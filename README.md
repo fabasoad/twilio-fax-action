@@ -1,6 +1,6 @@
 # Twilio Fax Action (Deprecated)
 
-> **This GitHub action is deprecated, is not supported and cannot be used. Twilio [sunset programmable
+> **This GitHub action is deprecated, not supported and cannot be used. Twilio [sunset programmable
 fax offering on 2021/12/17](https://www.twilio.com/changelog/programmable-fax-end-life-one-year-notice).
 And also, twilio-node library introduced the breaking change in [3.74.0](https://github.com/twilio/twilio-node/releases/tag/3.74.0)
 version where possibility to send faxes has been removed.**

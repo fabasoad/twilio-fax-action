@@ -3,8 +3,8 @@ name: 'Twilio Fax (Deprecated)'
 author: Yevhen Fabizhevskyi
 description: 'This GitHub action sends fax with the defined text.'
 branding:
-  icon: file-text
-  color: white
+  icon: eye-off
+  color: gray-dark
 inputs:
   twilio_account_sid:
     description: 'Twilio Account SID.'
@@ -30,5 +30,5 @@ outputs:
   sid:
     description: 'SID of fax operation.'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
